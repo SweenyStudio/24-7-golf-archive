@@ -11,4 +11,10 @@ export default defineConfig({
   adapter: vercel({
     imageService: true,
   }),
+  buildOptions: {
+    // Specify the output directory for your build files
+    outDir: './dist',
+  },
+
+
 });
