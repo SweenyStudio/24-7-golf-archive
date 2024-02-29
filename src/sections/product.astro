@@ -15,135 +15,135 @@ import ProductOptions from "../components/products/product-options";
 import ProductFaqs from "../components/products/product-faqs.astro";
 
 const product = {
-    name: "SkyTrak Practice Package",
-    price: "$8,299",
-    originalPrice: "$8,499",
-    rating: 4.9,
-    images: [
-        {
-            id: 1,
-            name: "Main view",
-            src: MainView,
-            alt: "SkyTrak Practice Package",
-        },
-        {
-            id: 2,
-            name: "Empty Background",
-            src: Image2,
-            alt: "SkyTrak Practice Package 2",
-        },
-        {
-            id: 3,
-            name: "Whats Included",
-            src: Image3,
-            alt: "SkyTrak Practice Package 3",
-        },
-        {
-            id: 4,
-            name: "Green",
-            src: Image4,
-            alt: "SkyTrak Practice Package 4",
-        },
-        {
-            id: 5,
-            name: "Ipad and SkyTrak",
-            src: Image5,
-            alt: "SkyTrak Practice Package 5",
-        },
-        {
-            id: 6,
-            name: "Dimensions",
-            src: Image6,
-            alt: "SkyTrak Practice Package 6",
-        },
-    ],
-    sizing: [
-        {
-            name: "Par 3",
-            dimensions: "3m (W) x 2.6m (H) x 1.6m (D)",
-            variantId: "42074544439467",
-        },
-        {
-            name: "Par 4",
-            dimensions: "3.6m (W) x 2.6m (H) x 1.6m (D)",
-            variantId: "42574423916715",
-        },
-        {
-            name: "Par 5",
-            dimensions: "4m (W) x 3m (H) x 3m (D)",
-            variantId: "42074544505003",
-        },
-        {
-            name: "Par 5 - Shallow",
-            dimensions: "4m (W) x 3m (H) x 1.6m (D)",
-            variantId: "42809803702443",
-        },
-    ],
-    description:
-        "Elevate your golf game with the SkyTrak Practice Package, an all-in-one solution that combines advanced photometric technology with a portable design, allowing for accurate shot analysis and practice in any space. Experience realistic simulations on world-renowned courses and gain comprehensive data insights, all from the comfort of your home.",
-    details: [
-        {
-            name: "What is included in my purchase?",
-            answer: `
+  name: "SkyTrak Practice Package",
+  price: "$7,499",
+  originalPrice: "$8,332.95",
+  rating: 4.9,
+  images: [
+    {
+      id: 1,
+      name: "Main view",
+      src: MainView,
+      alt: "SkyTrak Practice Package",
+    },
+    {
+      id: 2,
+      name: "Empty Background",
+      src: Image2,
+      alt: "SkyTrak Practice Package 2",
+    },
+    {
+      id: 3,
+      name: "Whats Included",
+      src: Image3,
+      alt: "SkyTrak Practice Package 3",
+    },
+    {
+      id: 4,
+      name: "Green",
+      src: Image4,
+      alt: "SkyTrak Practice Package 4",
+    },
+    {
+      id: 5,
+      name: "Ipad and SkyTrak",
+      src: Image5,
+      alt: "SkyTrak Practice Package 5",
+    },
+    {
+      id: 6,
+      name: "Dimensions",
+      src: Image6,
+      alt: "SkyTrak Practice Package 6",
+    },
+  ],
+  sizing: [
+    {
+      name: "Par 3",
+      dimensions: "3m (W) x 2.6m (H) x 1.6m (D)",
+      variantId: "42074544439467",
+    },
+    {
+      name: "Par 4",
+      dimensions: "3.6m (W) x 2.6m (H) x 1.6m (D)",
+      variantId: "42574423916715",
+    },
+    {
+      name: "Par 5",
+      dimensions: "4m (W) x 3m (H) x 3m (D)",
+      variantId: "42074544505003",
+    },
+    {
+      name: "Par 5 - Shallow",
+      dimensions: "4m (W) x 3m (H) x 1.6m (D)",
+      variantId: "42809803702443",
+    },
+  ],
+  description:
+    "Elevate your golf game with the SkyTrak Practice Package, an all-in-one solution that combines advanced photometric technology with a portable design, allowing for accurate shot analysis and practice in any space. Experience realistic simulations on world-renowned courses and gain comprehensive data insights, all from the comfort of your home.",
+  details: [
+    {
+      name: "What is included in my purchase?",
+      answer: `
         <p>
         Every Purchase Includes: <br /> <ul> <li>SkyTrak Launch Monitor</li> <li>Game Improvement Package</li> <li>Protective Metal Case</li> <li>USB Cable</li> <li>Charger</li> <li>Quick Start Guide</li> <li>1 Year Warranty</li> </ul>
         </p>
         `,
-        },
-        {
-            name: "Do you offer free shipping?",
-            answer: `
+    },
+    {
+      name: "Do you offer free shipping?",
+      answer: `
     <p>
     Yes, curbside delivery is absolutely free on our SkyTrack Practice Package.
     <br />
     </p>
     `,
-        },
-        {
-            name: "What is lead time?",
-            answer: `
+    },
+    {
+      name: "What is lead time?",
+      answer: `
       <p>
       Lead time is generally 5-10 business days. All orders are shipped from our warehouse in Melbourne, Australia.
        <br />
       </p>
 
       `,
-        },
-        {
-            name: "Do you have financing?",
-            answer: `
+    },
+    {
+      name: "Do you have financing?",
+      answer: `
       <p>
       We offer flexible financing options starting at just $13/week using our partner, Platform Direct Finance.
       </p>
       `,
-        },
-    ],
+    },
+  ],
 };
 ---
 
 <Container>
-    <section
-        id="product"
-        class="relative my-4 sm:my-8 lg:my-16 lg:grid lg:grid-cols-5 lg:items-start lg:gap-x-8"
-    >
-        {/* Image gallery */}
-        <ProductImages images={product.images} />
+  <section
+    id="product"
+    class="relative my-4 sm:my-8 lg:my-16 lg:grid lg:grid-cols-5 lg:items-start lg:gap-x-8"
+  >
+    {/* Image gallery */}
+    <ProductImages images={product.images} />
 
-        <div class="z-0 py-4 sm:mt-16 sm:px-0 lg:col-span-2 lg:mt-0">
-            {/* Product info */}
-            <ProductName name={product.name} />
-            <ProductsReviews rating={product.rating} />
-            <ProductPrice
-                price={product.price}
-                originalPrice={product.originalPrice}
-            />
-            <ProductDescription description={product.description} />
+    <div class="z-0 py-4 sm:mt-16 sm:px-0 lg:col-span-2 lg:mt-0">
+      {/* Product info */}
+      <ProductName name={product.name} />
+      <ProductsReviews rating={product.rating} />
+      <ProductPrice
+        price={product.price}
+        originalPrice={product.originalPrice}
+      />
+      <ProductDescription description={product.description} />
 
-            {/* Sizing */}
-            <ProductOptions sizing={product.sizing} client:load />
+      {/* Sizing */}
+      <ProductOptions sizing={product.sizing} client:load />
 
-            {/* Details */}
-            <ProductFaqs details={product.details} />
-        </div>
-    </section>
+      {/* Details */}
+      <ProductFaqs details={product.details} />
+    </div>
+  </section>
 </Container>
